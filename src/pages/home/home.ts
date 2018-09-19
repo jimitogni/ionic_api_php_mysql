@@ -7,6 +7,9 @@ import { ServiceProvider } from '../../providers/service/service';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
+  providers: [
+    ServiceProvider
+  ]
 })
 export class HomePage {
 
@@ -16,9 +19,6 @@ export class HomePage {
   sala : any[];
   responseTxt : any;
   public listaResultados = new Array<any>();
-
-
-    constructor(public navCtrl: NavController, public service:ServiceProvider) { }
 
     listarTrabalhos(){
       let url = "http://jimi.kozow.com:1234/crud/read.php";
@@ -80,7 +80,5 @@ export class HomePage {
                 }
       );
     }
-
-  }
 
 }

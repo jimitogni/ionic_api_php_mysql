@@ -12,7 +12,7 @@ $obs = $_POST["obs"];
 
 $servidor = "localhost";
 $usuario = "jimi";
-$senha = "341322";
+$senha = "12346";
 $db = "feira";
 
 $conecta = mysqli_connect($servidor, $usuario, $senha, $db);

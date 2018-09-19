@@ -10,7 +10,6 @@ import 'rxjs/Rx';
 export class ServiceProvider {
 
   constructor(public http: HttpClient) {
-    console.log('Hello ServiceProvider Provider');
   }
 
   readTable(){

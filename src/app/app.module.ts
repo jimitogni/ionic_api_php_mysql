@@ -8,13 +8,21 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ServiceProvider } from '../providers/service/service';
 
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise'
+import 'rxjs/add/observable/from';
+import 'rxjs/Rx';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,HttpClientModule,HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
