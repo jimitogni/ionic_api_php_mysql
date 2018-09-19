@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RsLista" value="name:user_id;datatype:int,name:user_nome;datatype:string,name:user_email;datatype:string,name:user_senha;datatype:string" />
+	<infoitem key="UD_RslistaArq" value="name:arq_id;datatype:int,name:arq_nome;datatype:string,name:arq_data;datatype:string,name:user_id;datatype:int" />
+	<infoitem key="UD_rsusuarios" value="name:user_nome;datatype:int,name:user_id;datatype:int,name:user_email;datatype:int,name:user_senha;datatype:int" />
+	<infoitem key="UD_rsarquivos" value="name:arq_data;datatype:int,name:user_id;datatype:int,name:arq_nome;datatype:int,name:arq_id;datatype:int" />
+	<infoitem key="UD_rsTotalArq" value="name:arq_id;datatype:int,name:arq_nome;datatype:string,name:arq_data;datatype:string,name:user_id;datatype:int" />
+	<infoitem key="UD_Rstotal" value="name:arq_id;datatype:int,name:arq_nome;datatype:string,name:arq_data;datatype:string,name:user_id;datatype:int" />
+	<infoitem key="UD_rsarquivos1" value="name:arq_nome;datatype:string,name:arq_data;datatype:string,name:user_id;datatype:int,name:arq_id;datatype:int" />
+	<infoitem key="UD_rsUser" value="name:user_id;datatype:int,name:user_nome;datatype:string,name:user_email;datatype:string,name:user_senha;datatype:string" />
+	<infoitem key="UD_Rslistas" value="name:arq_id;datatype:int,name:arq_nome;datatype:string,name:arq_data;datatype:string,name:user_id;datatype:int" />
+	<infoitem key="UD_RsUser" value="name:user_nome;datatype:string" />
+	<infoitem key="UD_Recordset1" value="name:user_id;datatype:int,name:user_nome;datatype:string,name:user_email;datatype:string,name:user_senha;datatype:string" />
+</info>

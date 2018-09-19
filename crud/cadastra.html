@@ -1,0 +1,62 @@
+ <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <link href="cadastro.css" rel="stylesheet" type="text/css">
+    </head>
+
+<body>
+
+
+
+  <div class="container row">
+    <div class="row">
+              <form class="col s12 center" action="envia.php" method="post" enctype="multipart/form-data">
+
+                  <div class="input-field col s12">
+                      <input type="text" id="titulo" name="nome" class="validate">
+                      <label for="titulo" class="active">Seu nome </label>
+                  </div></br>
+
+                  <div class="input-field col s12">
+                      <label for="sala" class="active">Sala:</label>
+                      <input type="text" name="sala"  id="sala" class="validate"/>
+                  </div></br>
+
+                  <div class="input-field col s12">
+                      <label for="email" class="active">Seu email:</label>
+                      <input type="email" name="email" id="email" class="validate"/>
+                  </div>
+                  </br>
+
+                  <div class="col s12 center">
+                    <p class="center">Selecione o arquivo:</p>
+                    Enviar esse arquivo: <input name="userfile" type="file"/></br></br></br>
+                  </div>
+                  </br></br></br>
+                  <div class="col s12 center">
+                    <input type="submit" value="Enviar arquivo" class="btn waves-effect waves-light"/>
+                  </div>
+                </form>
+              </div>
+      </div>
+
+	  <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          M.updateTextFields();
+        });
+      </script>
+    </body>
+  </html>

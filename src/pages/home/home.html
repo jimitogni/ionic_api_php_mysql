@@ -7,8 +7,34 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+
+  <p>Resposta do server:</p>
+  <p> {{responseTxt}} </p>
+
+  <button ion-button full (click)="showTable()" >Abrir PDF</button>
+
+  <h2>Lançamento de Menções</h2>
+
+  <ion-input type="text" placeholder="Código do trabalho" [(ngModel)]="codigo">scasfsdfs</ion-input>
+  <ion-input type="number" placeholder="Nota" [(ngModel)]="nota"></ion-input>
+  <ion-input type="textarea" placeholder="Observações" [(ngModel)]="obs"></ion-input>
+
+  <button ion-button full (click)="addTable(codigo, nota, obs)">Enviar Menções</button>
+  <button ion-button full>Limpar Dados</button>
+
+
+  <ion-content padding>
+   <h1>Trabalhos: </h1>
+  <button ion-button full (click)="listarTrabalhos()"> Listar trabalhos</button>
+
+  <div class="box" *ngFor="let item of titulo; let i = index">
+
+    <div>
+      <p><span>Titulo: </span> <span innerHTML = {{titulo[i]}}></span> </p>
+      <p><span>Sala: </span> <span innerHTML = {{sala[i]}}></span> </p>
+    </div>
+
+  </div>
+
+
+  </ion-content>

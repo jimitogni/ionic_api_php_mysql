@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Rsli" value="name:lev_id;datatype:int,name:lev_nome;datatype:string" />
+</info>
