@@ -6,7 +6,7 @@ import { ServiceProvider } from '../../providers/service/service';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
   providers: [
     ServiceProvider
   ]
