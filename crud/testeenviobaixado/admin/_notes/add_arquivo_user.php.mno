@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_RsUsers" value="name:user_id;datatype:int,name:user_nome;datatype:string,name:user_email;datatype:string,name:user_senha;datatype:string" />
-	<infoitem key="UD_rsarquivos" value="name:arq_nome;datatype:int,name:arq_data;datatype:int,name:user_id;datatype:int,name:arq_id;datatype:int" />
-	<infoitem key="UD_RsUsers1" value="name:user_id;datatype:int,name:user_nome;datatype:string,name:user_email;datatype:string,name:user_senha;datatype:string" />
-	<infoitem key="UD_Rsmostrar" value="name:user_id;datatype:int,name:user_nome;datatype:string,name:user_email;datatype:string,name:user_senha;datatype:string" />
-</info>

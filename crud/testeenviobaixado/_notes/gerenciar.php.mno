@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_rsarquivos" value="name:arq_nome;datatype:int,name:arq_data;datatype:int,name:user_id;datatype:int,name:arq_id;datatype:int" />
-</info>

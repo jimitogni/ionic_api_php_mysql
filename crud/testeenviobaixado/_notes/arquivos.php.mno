@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_Recordset1" value="name:arq_id;datatype:int,name:arq_nome;datatype:string,name:arq_data;datatype:string,name:user_id;datatype:int" />
-	<infoitem key="UD_RsArq" value="name:arq_id;datatype:int,name:arq_nome;datatype:string,name:arq_data;datatype:string,name:user_id;datatype:int" />
-</info>
