@@ -11,8 +11,8 @@ $nota = $_POST["nota"];
 $obs = $_POST["obs"];
 
 $servidor = "localhost";
-$usuario = "jimi";
-$senha = "12346";
+$usuario = "alunos";
+$senha = "alunos";
 $db = "feira";
 
 $conecta = mysqli_connect($servidor, $usuario, $senha, $db);

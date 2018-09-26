@@ -5,6 +5,9 @@ import { LoadingController } from 'ionic-angular';
 
 import 'rxjs/add/operator/map';
 
+import { ServiceProvider } from '../../providers/service/service';
+
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
@@ -25,10 +28,14 @@ data:string;
               private http: Http,
               public loading: LoadingController) {}
 
+  titulo : any[];
+  sala : any[];
+  responseTxt : any;
+  public listaResultados = new Array<any>();
 
 //método para login
-logIN(){
-  //verifica se o campo login nao esta vazio
+signIn(){
+
     if(this.username.value=="" ){
       let alert = this.alertCtrl.create({
       title:"Atenção",
@@ -38,7 +45,6 @@ logIN(){
       alert.present();
     } else
 
-    //verifica se o campo senha nao esta vazio
     if(this.password.value==""){
       let alert = this.alertCtrl.create({
       title:"Atenção",
@@ -48,7 +54,7 @@ logIN(){
       alert.present();
     }
       else{
-      //insere os cabeçalhos html para que o servidor reconheça como API
+
       var headers = new Headers();
       headers.append("Accept", 'application/json');
       headers.append('Content-Type', 'application/json' );
@@ -92,7 +98,7 @@ logIN(){
         });
         alert.present();
         }
-
+        
       });
       });
       }

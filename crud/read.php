@@ -3,8 +3,8 @@
 header("Access-Control-Allow-Origin: *");
 
 $servidor = "localhost";
-$usuario = "jimi";
-$senha = "341322";
+$usuario = "alunos";
+$senha = "alunos";
 $db = "feira";
 
 $conecta = mysqli_connect($servidor, $usuario, $senha, $db);
