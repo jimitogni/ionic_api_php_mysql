@@ -20,7 +20,6 @@ export class HomePage {
 data:string;
 
   constructor(public navCtrl: NavController,
-              public service: ServiceProvider,
               public alertCtrl: AlertController,
               private http: Http,
               public loading: LoadingController) {}
