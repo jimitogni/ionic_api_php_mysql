@@ -6,7 +6,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ServiceProvider } from '../providers/service/service';
 
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
@@ -34,7 +33,6 @@ import 'rxjs/Rx';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ServiceProvider
   ]
 })
 export class AppModule {}
