@@ -2,15 +2,15 @@ import { NavController, AlertController } from 'ionic-angular';
 import { Component, ViewChild  } from '@angular/core';
 import { Http, Headers, RequestOptions }  from "@angular/http";
 import { LoadingController } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
+
 
 import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
-  providers: [
-    ServiceProvider
-  ]
+  
 })
 export class HomePage {
 
@@ -19,10 +19,11 @@ export class HomePage {
 
 data:string;
 
-  constructor(public navCtrl: NavController,
+constructor(public navCtrl: NavController,
               public alertCtrl: AlertController,
               private http: Http,
-              public loading: LoadingController) {}
+              public loading: LoadingController,
+              private storage: Storage) {}
 
 
 //método para login
@@ -58,6 +59,9 @@ logIN(){
       username: this.username.value,
       password: this.password.value
       };
+
+      this.storage.set('usuario',this.username);
+      this.storage.set('senha',this.password);
 
       let loader = this.loading.create({
       content: 'Processando o login...',

@@ -10,6 +10,8 @@ import { HomePage } from '../pages/home/home';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 
+import { IonicStorageModule } from '@ionic/storage';
+
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise'
 import 'rxjs/add/observable/from';
