@@ -1,5 +1,3 @@
-# ionic-api-php-mysql
+# AI agent api
 
-App Ionic consumindo e gravando dados através de API em PHP e Mysql
-
-IONIC app consuming and writing data through API in PHP and Mysql
+AI agent api restful to consume data from a LLM
